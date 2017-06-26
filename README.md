@@ -13,5 +13,7 @@ sudo apt-get install chromium-browser
 sudo pip install selenium
 brew install chromium-browser
 ```
+One can manually download chromiun from ``` https://download-chromium.appspot.com/ ```
+
 
 
