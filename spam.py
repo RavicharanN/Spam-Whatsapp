@@ -8,7 +8,7 @@ import time
 driver = webdriver.Chrome('./chromedriver')
 driver.get("https://web.whatsapp.com/")
 
-# Not that the content in the whatsappSite is genertated dynamically by the JS engine
+# Note that the content in the whatsappSite is genertated dynamically by the JS engine
 # So one has to was wait till the Js content is loaded in the source
 # "WebDriverWait" is set to wait for .6s before any action begins.
 # So the follwing is variable os set.
@@ -32,4 +32,3 @@ input_box = wait.until(EC.presence_of_element_located((By.XPATH, inp_xpath)))
 for i in range(20):
     input_box.send_keys(string + Keys.ENTER)
     time.sleep(1)
-    
